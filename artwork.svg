@@ -11,11 +11,15 @@
 <!-- dreamy twilight -->
 <rect width="768" height="768" rx="56" fill="url(#bg)"/>
 <circle cx="385" cy="355" r="300" fill="url(#halo)"/>
-<!-- little stars -->
+<!-- little stars and a floating heart to give the seal a tiny story -->
 <g fill="#fff6d7" opacity=".86">
  <path d="M130 169l6 17 17 6-17 6-6 17-6-17-17-6 17-6z"/><path d="M627 206l4 12 12 4-12 4-4 12-4-12-12-4 12-4z"/>
  <path d="M176 352l4 11 11 4-11 4-4 11-4-11-11-4 11-4z"/><path d="M603 390l5 14 14 5-14 5-5 14-5-14-14-5 14-5z"/>
  <circle cx="228" cy="226" r="4"/><circle cx="553" cy="280" r="4"/><circle cx="128" cy="482" r="3"/><circle cx="657" cy="511" r="3"/><circle cx="250" cy="580" r="3"/>
+ <path d="M185 250c-12-10-26 7 0 24 26-17 12-34 0-24z" fill="#ffc5d3" opacity=".92"/>
+ <path d="M582 494c-9-8-19 5 0 18 19-13 9-26 0-18z" fill="#ffd4df" opacity=".88"/>
+ <path d="M111 399l4 11 11 4-11 4-4 11-4-11-11-4 11-4z" fill="#fff4bd" opacity=".8"/>
+ <path d="M655 305l3 8 8 3-8 3-3 8-3-8-8-3 8-3z" fill="#fff4bd" opacity=".8"/>
 </g>
 <g fill="#dbe8ff" opacity=".65"><circle cx="197" cy="280" r="3"/><circle cx="570" cy="166" r="3"/><circle cx="620" cy="572" r="4"/><circle cx="154" cy="558" r="4"/></g>
 <!-- soft ground shadow -->

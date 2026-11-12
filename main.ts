@@ -16,6 +16,9 @@ if (statSync(source).size > 1024 * 1024) {
 if (image.toString('ascii', 12, 16) !== 'IHDR') {
   throw new Error('entry.png must begin with a PNG IHDR header');
 }
+if (image[24] !== 8 || image[25] !== 6) {
+  throw new Error('entry.png must use 8-bit RGBA color for clean transparency');
+}
 const width = image.readUInt32BE(16);
 const height = image.readUInt32BE(20);
 if (width > 1024 || height > 1024 || width < 1 || height < 1) {
