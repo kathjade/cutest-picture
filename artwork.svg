@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="768" height="768" viewBox="0 0 768 768">
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#18264f"/><stop offset=".55" stop-color="#435d91"/><stop offset="1" stop-color="#b17fa3"/></linearGradient>
+ <radialGradient id="halo"><stop stop-color="#fff4bd" stop-opacity=".34"/><stop offset="1" stop-color="#fff4bd" stop-opacity="0"/></radialGradient>
+ <linearGradient id="body" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#fff8e9"/><stop offset="1" stop-color="#d9e5f3"/></linearGradient>
+ <linearGradient id="flipper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f4d6d0"/><stop offset="1" stop-color="#d9aeb9"/></linearGradient>
+ <linearGradient id="star" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#fff7b7"/><stop offset="1" stop-color="#ffc56f"/></linearGradient>
+ <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%"><feGaussianBlur in="SourceAlpha" stdDeviation="16"/><feOffset dy="18"/><feComponentTransfer><feFuncA type="linear" slope=".32"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ <filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="22"/></filter>
+</defs>
+<!-- dreamy twilight -->
+<rect width="768" height="768" rx="56" fill="url(#bg)"/>
+<circle cx="385" cy="355" r="300" fill="url(#halo)"/>
+<!-- little stars -->
+<g fill="#fff6d7" opacity=".86">
+ <path d="M130 169l6 17 17 6-17 6-6 17-6-17-17-6 17-6z"/><path d="M627 206l4 12 12 4-12 4-4 12-4-12-12-4 12-4z"/>
+ <path d="M176 352l4 11 11 4-11 4-4 11-4-11-11-4 11-4z"/><path d="M603 390l5 14 14 5-14 5-5 14-5-14-14-5 14-5z"/>
+ <circle cx="228" cy="226" r="4"/><circle cx="553" cy="280" r="4"/><circle cx="128" cy="482" r="3"/><circle cx="657" cy="511" r="3"/><circle cx="250" cy="580" r="3"/>
+</g>
+<g fill="#dbe8ff" opacity=".65"><circle cx="197" cy="280" r="3"/><circle cx="570" cy="166" r="3"/><circle cx="620" cy="572" r="4"/><circle cx="154" cy="558" r="4"/></g>
+<!-- soft ground shadow -->
+<ellipse cx="386" cy="641" rx="202" ry="38" fill="#141e42" opacity=".42"/>
+<!-- glowing star behind -->
+<path d="M521 315l39-71 24 78 78 22-69 42 1 82-62-52-77 26 29-76-47-67z" fill="#ffd678" opacity=".4" filter="url(#glow)"/>
+<path d="M518 316l40-76 24 82 81 23-72 43 2 84-64-53-79 27 30-78-49-69z" fill="url(#star)" stroke="#fff1bd" stroke-width="8" stroke-linejoin="round" filter="url(#shadow)"/>
+<path d="M555 286l9-17 5 20 19 6-18 7-4 20-9-18-19-5z" fill="#fffbe0" opacity=".9"/>
+<!-- seal tail -->
+<path d="M285 566c-75 29-116 74-100 111 13 30 62 24 114-13 30-22 45-46 43-67z" fill="url(#body)" stroke="#fff9ee" stroke-width="8"/>
+<path d="M285 604c-35 21-58 43-64 62 27 1 58-17 81-38" fill="none" stroke="#bdcddd" stroke-width="7" stroke-linecap="round" opacity=".7"/>
+<!-- body -->
+<ellipse cx="376" cy="464" rx="170" ry="186" fill="url(#body)" stroke="#fffaf1" stroke-width="9" filter="url(#shadow)"/>
+<!-- belly -->
+<ellipse cx="375" cy="507" rx="111" ry="116" fill="#f6eee5" opacity=".8"/>
+<!-- ears / head fluffs -->
+<path d="M249 354c-43-62-22-113 12-113 31 0 55 48 54 93" fill="#e9edf5" stroke="#fffaf1" stroke-width="9"/>
+<path d="M473 345c11-57 47-91 72-72 28 22 4 73-38 108" fill="#e9edf5" stroke="#fffaf1" stroke-width="9"/>
+<path d="M265 302c-16-23-9-39 3-38 14 1 25 21 28 41" fill="#e9bfc3"/><path d="M507 302c11-22 26-33 35-25 10 9-2 30-19 43" fill="#e9bfc3"/>
+<!-- face -->
+<ellipse cx="326" cy="399" rx="13" ry="19" fill="#263253"/><ellipse cx="430" cy="399" rx="13" ry="19" fill="#263253"/>
+<circle cx="322" cy="392" r="4.4" fill="#fff"/><circle cx="426" cy="392" r="4.4" fill="#fff"/>
+<ellipse cx="291" cy="430" rx="25" ry="13" fill="#f1a6b0" opacity=".58"/><ellipse cx="465" cy="430" rx="25" ry="13" fill="#f1a6b0" opacity=".58"/>
+<path d="M370 426q7-8 14 0-1 11-7 11t-7-11z" fill="#cf8490"/><path d="M377 437q-12 14-22 2m22-2q12 14 22 2" fill="none" stroke="#53617a" stroke-width="5" stroke-linecap="round"/>
+<!-- flippers embracing star -->
+<path d="M248 468c-48 4-76 34-72 69 4 34 39 43 85 29 27-8 48-26 55-48" fill="url(#flipper)" stroke="#fff5eb" stroke-width="8" stroke-linecap="round"/>
+<path d="M477 475c40-29 82-29 99-2 18 29-2 61-44 83-30 16-60 19-81 7" fill="url(#flipper)" stroke="#fff5eb" stroke-width="8" stroke-linecap="round"/>
+<!-- tiny paw marks -->
+<g fill="#b97889" opacity=".75"><circle cx="228" cy="534" r="5"/><circle cx="242" cy="530" r="5"/><circle cx="235" cy="541" r="5"/><circle cx="513" cy="535" r="5"/><circle cx="527" cy="530" r="5"/><circle cx="520" cy="542" r="5"/></g>
+<!-- a little ribbon -->
+<path d="M347 573q29-22 57 0l-9 30 9 27-29-13-29 13 9-27z" fill="#f19db0" stroke="#fff2ef" stroke-width="5" stroke-linejoin="round"/>
+<circle cx="376" cy="583" r="8" fill="#ffe6a9"/>
+<!-- small caption-like decorative dots, no text -->
+<path d="M301 646q75 26 149-2" fill="none" stroke="#fff8e9" stroke-width="5" opacity=".52" stroke-linecap="round"/>
+</svg>
