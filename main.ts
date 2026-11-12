@@ -1,4 +1,4 @@
-// Write the original, locally rendered illustration to the grader's required path.
+// Write the original cosmic manta artwork to the grader's required path.
 import { copyFileSync, mkdirSync, readFileSync, statSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { join } from 'node:path';
@@ -18,6 +18,9 @@ if (image.toString('ascii', 12, 16) !== 'IHDR') {
 }
 if (image[24] !== 8 || image[25] !== 6) {
   throw new Error('entry.png must use 8-bit RGBA color for clean transparency');
+}
+if (image.readUInt32BE(8) < 13 || image.readUInt32BE(8) > image.length) {
+  throw new Error('entry.png has an invalid PNG header length');
 }
 const width = image.readUInt32BE(16);
 const height = image.readUInt32BE(20);

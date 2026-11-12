@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="768" height="768" viewBox="0 0 768 768">
+<defs>
+ <linearGradient id="sky" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#100d32"/><stop offset=".5" stop-color="#35256f"/><stop offset="1" stop-color="#fa765e"/></linearGradient>
+ <radialGradient id="aura"><stop stop-color="#ffdd9a" stop-opacity=".65"/><stop offset="1" stop-color="#ffb36b" stop-opacity="0"/></radialGradient>
+ <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e8fff9"/><stop offset=".38" stop-color="#8fd7e7"/><stop offset="1" stop-color="#6689c9"/></linearGradient>
+ <linearGradient id="fin" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#fff4bc"/><stop offset=".5" stop-color="#ff9c87"/><stop offset="1" stop-color="#db5da5"/></linearGradient>
+ <linearGradient id="dorsal" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#7be2df"/><stop offset="1" stop-color="#8f90ec"/></linearGradient>
+ <filter id="blur"><feGaussianBlur stdDeviation="22"/></filter>
+ <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feGaussianBlur in="SourceAlpha" stdDeviation="12"/><feOffset dy="16"/><feComponentTransfer><feFuncA type="linear" slope=".4"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<!-- a twilight sea under a sky full of tiny constellations -->
+<rect width="768" height="768" rx="42" fill="url(#sky)"/>
+<circle cx="393" cy="326" r="286" fill="url(#aura)"/>
+<g fill="#fff6d6">
+ <path d="M93 139l5 14 14 5-14 5-5 14-5-14-14-5 14-5z"/><path d="M655 170l4 12 12 4-12 4-4 12-4-12-12-4 12-4z"/>
+ <path d="M168 260l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/><path d="M593 285l5 13 13 5-13 5-5 13-5-13-13-5 13-5z"/>
+ <circle cx="251" cy="153" r="3"/><circle cx="525" cy="121" r="3"/><circle cx="614" cy="232" r="3"/><circle cx="127" cy="336" r="3"/><circle cx="683" cy="390" r="3"/><circle cx="208" cy="402" r="2.5"/><circle cx="560" cy="392" r="2.5"/>
+</g>
+<g fill="none" stroke="#b3c8ff" stroke-width="1.5" opacity=".55"><path d="M525 121l42 28 47 83-21 53"/><path d="M127 336l41-76 83-107"/><path d="M560 392l53-107 40-115"/></g>
+<!-- distant crescent planet -->
+<circle cx="152" cy="548" r="83" fill="#fcce98" opacity=".22" filter="url(#blur)"/>
+<circle cx="152" cy="548" r="54" fill="#ffd7a1"/>
+<circle cx="175" cy="530" r="48" fill="#30245f"/>
+<path d="M91 572c28-18 90-26 125-9" fill="none" stroke="#ffc9a4" stroke-width="3" opacity=".45"/>
+<!-- luminous wake -->
+<path d="M40 641c123-48 228-52 334-9 100 41 221 35 352-29" fill="none" stroke="#71d9df" stroke-width="10" opacity=".22" filter="url(#blur)"/>
+<path d="M35 652c123-48 228-52 334-9 100 41 221 35 352-29" fill="none" stroke="#b3fff1" stroke-width="3" opacity=".55"/>
+<!-- the glass-winged sky manta -->
+<g filter="url(#shadow)">
+ <path d="M389 383c-88-96-194-119-283-59 64 8 100 53 127 99-42-12-94 5-126 51 86-14 166 7 226 68 13 37 31 68 51 89 20-21 38-52 51-89 60-61 140-82 226-68-32-46-84-63-126-51 27-46 63-91 127-99-89-60-195-37-283 59 2-39-6-75-23-109-17 34-25 70-23 109z" fill="url(#glass)" stroke="#e6fff6" stroke-width="7" stroke-linejoin="round"/>
+ <path d="M389 382c-62-70-133-100-216-88 42 17 69 51 93 93-34-3-70 10-98 34 83-5 149 22 211 79 4-48 7-83 10-118z" fill="url(#fin)" opacity=".88"/>
+ <path d="M389 382c62-70 133-100 216-88-42 17-69 51-93 93 34-3 70 10 98 34-83-5-149 22-211 79-4-48-7-83-10-118z" fill="url(#dorsal)" opacity=".78"/>
+ <path d="M389 386c-9 64-12 146-5 225m12-223c12 65 28 133 51 190" fill="none" stroke="#f3fffa" stroke-width="5" opacity=".72" stroke-linecap="round"/>
+ <path d="M367 363q22-18 44 0-2 25-22 27-20-2-22-27z" fill="#18234e"/>
+ <circle cx="376" cy="365" r="5" fill="#fff"/><circle cx="398" cy="365" r="5" fill="#fff"/>
+ <path d="M378 401q11 10 22 0" fill="none" stroke="#bd597c" stroke-width="4" stroke-linecap="round"/>
+ <path d="M364 390c-28 14-43 32-49 55m111-55c28 14 43 32 49 55" fill="none" stroke="#fff5cc" stroke-width="3" opacity=".8" stroke-linecap="round"/>
+</g>
+<!-- small floating lights show the manta's scale -->
+<g fill="#fff1b7"><circle cx="292" cy="498" r="5"/><circle cx="488" cy="507" r="4"/><circle cx="329" cy="551" r="3"/><circle cx="452" cy="568" r="5"/></g>
+<g fill="none" stroke="#fff1b7" stroke-width="2" opacity=".7"><path d="M292 487v22m-11-11h22"/><path d="M488 498v18m-9-9h18"/><path d="M452 557v22m-11-11h22"/></g>
+</svg>
